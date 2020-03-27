@@ -4,9 +4,9 @@
 ```mermaid
 
 graph LR;
-  LINK -->|One| C1[Laptop]
-  LINK -->|Two| C2[iPhone]
-  LINK -->|Three| C3[Desktop]
+  CUSTOMER -->|One| C1[Laptop]
+  CUSTOMER -->|Two| C2[iPhone]
+  CUSTOMER -->|Three| C3[Desktop]
   C1 -->LB;
   C2 -->LB;
   C3 -->LB;  
