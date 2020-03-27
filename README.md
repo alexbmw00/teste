@@ -20,12 +20,9 @@ graph LR;
   DB01-->STORAGE01;
   
   STORAGE01-->SAN
-  SAN -->|One| SAN1[WWNID1]
-  SAN -->|Two| SAN2[WWNID2]
-  SAN -->|Three| SAN3[WWNID3]
-  
-  SAN -->SWITCH1;
-  SW1 -->|One| SW1[SW01];
-  SW2 -->|Two| SW2[SW02];
-  SW3 -->|Three| SW[SW03];
+  SAN -->SWITCH;
+    
+  SWITCH -->|One| SW1[SW01];
+  SWITCH -->|Two| SW2[SW02];
+  SWITCH -->|Three| SW3[SW03];
   ```
