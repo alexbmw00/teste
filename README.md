@@ -4,12 +4,12 @@
 ```mermaid
 
 graph LR;
-  C -->|One| D[Laptop]
-  C -->|Two| E[iPhone]
-  C -->|Three| F[fa:fa-car Car]
-  D -->LB;
-  E -->LB;
-  F -->LB;  
+  LINK -->|One| C1[Laptop]
+  LINK -->|Two| C2[iPhone]
+  LINK -->|Three| C3[Desktop]
+  C1 -->LB;
+  C2 -->LB;
+  C3 -->LB;  
 
 LB-->nginx-01; 
 LB-->nginx-02;
